@@ -10,6 +10,8 @@ Example project using Cloudflare R2 for Django Static Files and Media Uploads
 
 
 ### 2. Add `.env`
+As you can see on this repo, my django project is at `django-r2/src/` and my `.env` file is at `django-r2/.env`. Ensure that `.env` is one level above the root of your Django project (e.g. `src`) otherwise you need to customize how `python-decouple` loads the `.env` file.
+
 ```bash
 CLOUDFLARE_R2_BUCKET=""
 CLOUDFLARE_R2_BUCKET_ENDPOINT=""
