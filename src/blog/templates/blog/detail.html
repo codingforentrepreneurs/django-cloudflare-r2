@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+{{ object.title }} - {{ block.super}}
+{% endblock head_title %}
+
+
+{% block content %}
+
+<article class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <header class="p-6 bg-gray-50">
+        <h1 class="text-3xl font-bold text-gray-900">{{ object.title }}</h1>
+        <p class="text-sm text-gray-600 mt-2">
+            Published on {{ object.timestamp|date:"F j, Y" }}
+        </p>
+    </header>
+
+    {% if object.image %}
+    <div class="w-full h-64 overflow-hidden">
+        <img src="{{ object.image.url }}" alt="{{ object.title }}" class="w-full h-full object-cover">
+    </div>
+    {% endif %}
+
+    <div class="p-6">
+        <div class="prose max-w-none">
+            {{ object.content|safe }}
+        </div>
+    </div>
+</article>
+    
+    {% endblock content %}

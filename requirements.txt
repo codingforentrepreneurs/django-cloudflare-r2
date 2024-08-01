@@ -1,0 +1,4 @@
+Django
+django-storages[s3]
+python-decouple
+Pillow
