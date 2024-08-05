@@ -60,4 +60,4 @@ STORAGES = {
 
 Review the [Storages](https://docs.djangoproject.com/en/5.0/ref/settings/#storages) section of the Django docs if the 👆 looks new to you. 
 
-## In depth setup? Coming soon as a tutorial.
+## In depth setup? Wath the [tutorial](https://youtu.be/VU3MAN1gs1s).
